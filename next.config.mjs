@@ -1,11 +1,15 @@
-import { withPWA } from "next-pwa";
+import nextPWA from "next-pwa";
 
-const isProd = process.env.NODE_ENV === "production";
-
-export default withPWA({
-  pwa: {
-    dest: "public",
-    disable: !isProd,
-    
-  },
+const withPWA = nextPWA({
+  dest: "public",
+  disable: process.env.NODE_ENV !== "development",
+  register: true,
+  skipWaiting: true,
 });
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // other Next.js config
+};
+
+export default withPWA(nextConfig);
