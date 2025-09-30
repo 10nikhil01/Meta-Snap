@@ -64,9 +64,7 @@ export const metadata = {
     siteName: "Meta Snap",
     images: [
       {
-        url: `${siteUrl}/og-image.png`,
-        width: 1200,
-        height: 680,
+        // url: `${siteUrl}/og-image.png`,
         alt: "MetaSnap SEO Analysis",
       },
     ],
