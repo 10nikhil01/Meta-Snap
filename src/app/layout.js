@@ -40,7 +40,7 @@ export const metadata = {
     siteName: "MetaSnap",
     images: [
       {
-        url: `${siteUrl}/og-image.png`,
+        // url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "MetaSnap SEO Analysis",
@@ -54,7 +54,7 @@ export const metadata = {
     title: "Meta Snap - Instant SEO Insights",
     description:
       "Fetch SEO data and meta information for any website instantly using MetaSnap.",
-    images: [`${siteUrl}/og-image.png`],
+    // images: [`${siteUrl}/og-image.png`],
   },
   metadataBase: new URL(siteUrl),
   appleTouchIcon: "/favicon.ico",

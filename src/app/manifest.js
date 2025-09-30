@@ -1,0 +1,23 @@
+export default function manifest() {
+  return {
+    name: "Meta Snap",
+    short_name: "Meta-Snap",
+    description: "Fetch SEO data for any website instantly.",
+    start_url: "/",
+    display: "standalone",
+    background_color: "#000000",
+    theme_color: "#1DA1F2",
+    icons: [
+      {
+        src: "/favicon.ico",
+        sizes: "512x512",
+        type: "image/x-icon",
+      },
+      {
+        src: "/favicon.ico",
+        sizes: "192x192",
+        type: "image/png",
+      },
+    ],
+  };
+}
