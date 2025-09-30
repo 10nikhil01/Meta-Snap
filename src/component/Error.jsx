@@ -1,5 +1,5 @@
 export default function ErrorBox({ message }) {
   return (
-    <div className="bg-red-100 text-red-700 p-3 mb-4 mx-6 rounded">⚠️ {message}</div>
+    <div className="bg-red-100 text-red-700 p-3 mb-4 mx-2 sm:mx-6 rounded">⚠️ {message}</div>
   );
 }
