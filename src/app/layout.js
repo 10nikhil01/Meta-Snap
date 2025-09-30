@@ -25,6 +25,8 @@ export const metadata = {
     "Meta Tags",
     "Structured Data",
     "SEO Checker",
+    "Meta Data Extractor",
+    "SEO Tools",
   ],
   authors: [
     {
@@ -32,6 +34,28 @@ export const metadata = {
       url: "https://www.linkedin.com/in/reachnik",
     },
   ],
+  creator: "Nikhil Kumar",
+  publisher: "Meta Snap",
+
+  metadataBase: new URL(siteUrl),
+
+  alternates: {
+    canonical: siteUrl,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
+  },
   openGraph: {
     title: "Meta Snap - Instant SEO Insights",
     description:
@@ -49,16 +73,44 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Meta Snap - Instant SEO Insights",
     description:
       "Fetch SEO data and meta information for any website instantly using MetaSnap.",
     // images: [`${siteUrl}/og-image.png`],
+    creator: "@yourtwitterhandle",
   },
-  metadataBase: new URL(siteUrl),
-  appleTouchIcon: "/favicon.ico",
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+
   themeColor: "#1d4ed8",
+  applicationName: "Meta Snap",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Meta Snap",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+
+  manifest: `${siteUrl}/manifest.json`,
+
+  category: "technology",
+
+  alternates: {
+    languages: {
+      "en-US": siteUrl,
+      "hi-IN": siteUrl,
+      "x-default": siteUrl,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
