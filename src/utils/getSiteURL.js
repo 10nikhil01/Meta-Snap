@@ -6,5 +6,5 @@ export const getSiteUrl = () => {
 
   // Server-side
   const isDev = process.env.NODE_ENV === 'development';
-  return isDev ? 'http://localhost:3000' : 'https://meta-snap.vercel.app/';
+  return isDev ? 'http://localhost:3000' : 'https://meta-snap.vercel.app';
 };
