@@ -46,7 +46,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <div className="max-h-dvh min-h-dvh py-2 sm:p-10 bg-background flex items-center justify-start flex-col w-full">
-        <div className="md:w-xl md:mx-auto max-sm:w-full bg-background/10 rounded-2xl border-foreground/20 border-1">
+        <div className="md:w-xl md:mx-auto max-sm:w-full bg-background/10 rounded-2xl sm:border-foreground/20 sm:border-1">
           <div className="sm:px-6 px-2">
             <h1 className="sm:text-2xl font-bold my-4 sm:mb-4 text-center">
               Meta Snap
