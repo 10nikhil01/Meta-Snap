@@ -57,6 +57,8 @@ export const metadata = {
     images: [`${siteUrl}/og-image.png`],
   },
   metadataBase: new URL(siteUrl),
+  appleTouchIcon: "/favicon.ico",
+  themeColor: "#1d4ed8",
 };
 
 export default function RootLayout({ children }) {
