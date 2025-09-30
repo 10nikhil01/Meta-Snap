@@ -4,7 +4,7 @@ export default function SeoResult({ data }) {
   return (
     <div className="my-4">
       {data.metaData?.length > 0 ? (
-        <ul className="space-y-3 px-2 sm:px-6">
+        <ul id="seo-report" className="space-y-3 px-2 sm:px-6">
           {data.metaData.map((item, idx) => (
             <li
               key={idx}

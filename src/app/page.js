@@ -5,6 +5,7 @@ import Loading from "@/component/Loading";
 import ErrorBox from "@/component/Error";
 import SeoResult from "@/component/SeoResult";
 import { structuredData } from "@/component/structuredData";
+import DownloadButton from "@/component/DownloadButton";
 
 export default function Home() {
   const [url, setUrl] = useState("");
@@ -72,6 +73,7 @@ export default function Home() {
 
           {loading && <Loading />}
           {error && <ErrorBox message={error} />}
+          {!loading && !error && data && <DownloadButton data={data} />}
           {data && <SeoResult data={data} />}
         </div>
       </div>

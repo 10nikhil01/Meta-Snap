@@ -1,4 +1,3 @@
-// app/api/fetch-metadata/route.js
 import { NextResponse } from "next/server";
 import * as cheerio from "cheerio";
 
@@ -9,7 +8,6 @@ export async function POST(req) {
       return NextResponse.json({ error: "URL is required" }, { status: 400 });
     }
 
-    // Validate scheme (only allow http/https)
     if (!/^https?:\/\//i.test(url.toString())) {
       return NextResponse.json(
         { error: "Only HTTP/HTTPS URLs are allowed" },
@@ -17,7 +15,7 @@ export async function POST(req) {
       );
     }
 
-    // Try fetching
+    // Fetch target site
     let res;
     try {
       res = await fetch(url.toString(), { redirect: "follow" });
@@ -38,6 +36,7 @@ export async function POST(req) {
     const html = await res.text();
     const $ = cheerio.load(html);
 
+    // Collect metadata
     const metaData = [];
 
     // Title
@@ -54,7 +53,7 @@ export async function POST(req) {
       }
     });
 
-    // Links
+    // Link tags (canonical, icon, manifest, etc.)
     const allowedRels = [
       "author",
       "manifest",
@@ -71,64 +70,7 @@ export async function POST(req) {
       }
     });
 
-    // ------------------------
-    // Schema Data (JSON-LD)
-    // ------------------------
-    // Schema Data Parsing
-    const schemaData = [];
-    $('script[type="application/ld+json"]').each((_, el) => {
-      try {
-        const json = JSON.parse($(el).html());
-            console.log(json)
-        if (Array.isArray(json["@graph"])) {
-          // If @graph exists, push each item
-          json["@graph"].forEach((item) => schemaData.push(item));
-        } else if (json["@type"]) {
-          // Single top-level schema
-          schemaData.push(json);
-        }
-      } catch (err) {
-        // Ignore invalid JSON
-      }
-    });
-
-    // ------------------------
-    // Breadcrumbs
-    // ------------------------
-    const breadcrumbs = [];
-
-    // From schema.org BreadcrumbList
-    schemaData.forEach((schema) => {
-      if (
-        schema["@type"] === "BreadcrumbList" &&
-        Array.isArray(schema.itemListElement)
-      ) {
-        schema.itemListElement.forEach((item) => {
-          breadcrumbs.push({
-            name: item.name,
-            url: item.item,
-          });
-        });
-      }
-    });
-
-    // From HTML structure
-    $('nav[aria-label="breadcrumb"] li, ol.breadcrumb li').each((_, el) => {
-      const name = $(el).text().trim();
-      const url = $(el).find("a").attr("href") || null;
-      if (name) {
-        breadcrumbs.push({ name, url });
-      }
-    });
-
-    // ------------------------
-    // Final Response
-    // ------------------------
-    return NextResponse.json({
-      metaData,
-      schemaData,
-      breadcrumbs,
-    });
+    return NextResponse.json({ metaData });
   } catch (error) {
     console.error("Error fetching metadata:", error);
     return NextResponse.json(
