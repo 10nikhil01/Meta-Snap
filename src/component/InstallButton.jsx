@@ -13,7 +13,7 @@ export default function InstallButton() {
     <div className="fixed w-full bottom-4 px-4 inset-x-0 z-50">
       <button
         onClick={handleInstall}
-        className="flex w-fit  items-center gap-4 rounded-lg bg-orange-400/20 border text-nowrap border-orange-600 p-4 text-lg text-white shadow transition hover:bg-orange-500 max-sm:w-full lg:hidden"
+        className="flex w-fit  items-center gap-4 rounded-lg bg-orange-400/20 backdrop-blur-lg border text-nowrap border-orange-600 p-4 text-lg text-white shadow transition hover:bg-orange-500 max-sm:w-full lg:hidden"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
