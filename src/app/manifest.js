@@ -1,6 +1,6 @@
 export default function manifest() {
   return {
-    name: "Install Meta Snap",
+    name: "Meta Snap - Instant SEO Insights",
     short_name: "Meta Snap",
     description: "Fetch SEO data for any website instantly.",
     start_url: "/",
