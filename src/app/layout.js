@@ -87,7 +87,6 @@ export const metadata = {
     apple: "/favicon.ico",
   },
 
-  themeColor: "#1d4ed8",
   applicationName: "Meta Snap",
   appleWebApp: {
     capable: true,

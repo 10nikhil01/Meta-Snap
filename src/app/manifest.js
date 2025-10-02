@@ -1,14 +1,14 @@
 export default function manifest() {
   return {
-    name: "Meta Snap",
-    short_name: "Meta-Snap",
+    name: "Install Meta Snap",
+    short_name: "Meta Snap",
     description: "Fetch SEO data for any website instantly.",
     start_url: "/",
     scope: "/",
     display: "standalone",
     orientation: "portrait",
     background_color: "#000000",
-    theme_color: "#1DA1F2",
+    theme_color: "#024eb2",
     icons: [
       {
         src: "/icons/icon-192x192.png",
