@@ -1,4 +1,3 @@
-// components/DownloadButton.js
 "use client";
 import { generatePDF } from "@/utils/generatePdf";
 
