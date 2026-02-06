@@ -19,7 +19,6 @@
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
-- [Screenshots](#-screenshots)
 - [Troubleshooting](#-troubleshooting)
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
