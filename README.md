@@ -89,8 +89,8 @@ Open in browser:
 ---
 
 ## 🖼 Screenshots
+<img width="1916" height="900" alt="image" src="https://github.com/user-attachments/assets/4a54925f-a850-4c5f-8760-243707e9bef5" />
 
-Add screenshots of the UI here.
 
 ---
 
