@@ -18,7 +18,6 @@
 - [Tech Stack](#-tech-stack)
 - [Installation](#%EF%B8%8F-installation)
 - [Usage](#-usage)
-- [Project Structure](#-project-structure)
 - [Troubleshooting](#-troubleshooting)
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
@@ -74,19 +73,6 @@ Open in browser:
 
 ---
 
-## 🗂 Project Structure
-
-    Meta-Snap/
-    ├── components/
-    ├── pages/
-    │   ├── api/
-    │   └── index.js
-    ├── public/
-    ├── styles/
-    ├── package.json
-    └── README.md
-
----
 
 ## 🖼 Screenshots
 <img width="1916" height="900" alt="image" src="https://github.com/user-attachments/assets/4a54925f-a850-4c5f-8760-243707e9bef5" />
@@ -103,9 +89,7 @@ Open in browser:
 ---
 
 ## 🔮 Future Enhancements
-
-- 🌙 Dark mode support  
-- 📥 Export metadata as pdf  
+  
 - 🔍 Bulk URL metadata extraction  
 - 🧠 AI-powered SEO insights  
 
