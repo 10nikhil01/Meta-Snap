@@ -16,13 +16,13 @@
 - [Introduction](#-introduction)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
+- [Installation](#installation)
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Troubleshooting](#-troubleshooting)
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
-- [Author](#-author)
+- [Author](#author)
 
 ---
 
