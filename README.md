@@ -13,17 +13,17 @@
 
 ## 📌 Table of Contents
 
-- Introduction  
-- Features  
-- Tech Stack  
-- Installation  
-- Usage  
-- Project Structure  
-- Screenshots  
-- Troubleshooting  
-- Future Enhancements  
-- Contributing  
-- Author  
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Screenshots](#-screenshots)
+- [Troubleshooting](#-troubleshooting)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [Author](#-author)
 
 ---
 
