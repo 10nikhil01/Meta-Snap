@@ -22,7 +22,7 @@
 - [Troubleshooting](#-troubleshooting)
 - [Future Enhancements](#-future-enhancements)
 - [Contributing](#-contributing)
-- [Author](#author)
+- [Author](#%E2%80%8D-author)
 
 ---
 
