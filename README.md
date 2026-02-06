@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Meta Snap
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+🚀 **Meta Snap** is a simple, fast, and modern metadata extractor that fetches essential meta information from any public website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 **Live Demo:** https://meta-snap.vercel.app/  
+📦 **GitHub Repository:** https://github.com/10nikhil01/Meta-Snap
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</div>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Table of Contents
 
-## Learn More
+- Introduction  
+- Features  
+- Tech Stack  
+- Installation  
+- Usage  
+- Project Structure  
+- Screenshots  
+- Troubleshooting  
+- Future Enhancements  
+- Contributing  
+- Author  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 Introduction
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Meta Snap** is a lightweight web application that allows users to instantly extract metadata from any website URL. It helps developers, SEO experts, and content creators preview and analyze meta tags such as titles, descriptions, Open Graph data, and favicons.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🔍 Extract metadata from any public website  
+- ⚡ Fast and lightweight  
+- 🎨 Clean and modern UI  
+- 📱 Fully responsive  
+- 🌐 Open Graph & SEO meta tags support  
+- 🚀 Deployed on Vercel  
+
+---
+
+## 🛠 Tech Stack
+
+- Frontend: HTML, CSS, JavaScript  
+- Framework: Next.js  
+- Backend: Next.js API Routes  
+- Deployment: Vercel  
+
+---
+
+## ⚙️ Installation
+
+    git clone https://github.com/10nikhil01/Meta-Snap.git
+    cd Meta-Snap
+    npm install
+    npm run dev
+
+Open in browser:
+
+    http://localhost:3000
+
+---
+
+## 🚀 Usage
+
+1. Open the application  
+2. Enter a valid website URL  
+3. Click **Extract Metadata**  
+4. Instantly view the extracted meta information  
+
+---
+
+## 🗂 Project Structure
+
+    Meta-Snap/
+    ├── components/
+    ├── pages/
+    │   ├── api/
+    │   └── index.js
+    ├── public/
+    ├── styles/
+    ├── package.json
+    └── README.md
+
+---
+
+## 🖼 Screenshots
+
+Add screenshots of the UI here.
+
+---
+
+## 🐛 Troubleshooting
+
+- Ensure the website URL is publicly accessible  
+- Some websites may block metadata fetching due to CORS or security headers  
+- Try again if the website response is slow  
+
+---
+
+## 🔮 Future Enhancements
+
+- 🌙 Dark mode support  
+- 📥 Export metadata as pdf  
+- 🔍 Bulk URL metadata extraction  
+- 🧠 AI-powered SEO insights  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Open a pull request  
+
+---
+
+## 👨‍💻 Author
+
+**Nikhil**  
+GitHub: https://github.com/10nikhil01  
+
+---
+
+⭐ If you find this project useful, please consider giving it a star!
