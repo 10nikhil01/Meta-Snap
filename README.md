@@ -17,7 +17,7 @@
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Installation](#installation)
-- [Usage](#-usage)
+- [Usage](#%EF%B8%8F-installation)
 - [Project Structure](#-project-structure)
 - [Troubleshooting](#-troubleshooting)
 - [Future Enhancements](#-future-enhancements)
